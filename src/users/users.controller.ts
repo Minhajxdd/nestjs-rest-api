@@ -1,10 +1,12 @@
 import { Controller, Get, Post } from '@nestjs/common';
+import { UsersService } from './users.service';
 
 @Controller('users')
 export class UsersController {
   @Get()
   getUsers() {
-    return 'You made a GET request to get all users Data!';
+    const userService = new UsersService();
+    return userService.getAllUsers();
   }
 
   @Post()
