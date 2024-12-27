@@ -20,6 +20,13 @@ export class UsersService {
       age: 18,
       isMarried: false,
     },
+    {
+      id: 3,
+      name: 'Maria',
+      gender: 'female',
+      age: 23,
+      isMarried: true,
+    },
   ];
 
   getAllUsers() {
